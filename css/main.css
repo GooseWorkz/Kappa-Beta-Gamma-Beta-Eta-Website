@@ -1,1 +1,9 @@
 /* Place CSS styles here */
+
+body {
+    background-color: #faebd7;
+    font-family:fantasy
+    color: hsl(240, 100%, 27%);
+    font-size: 25px;
+    text-align:center;
+}
