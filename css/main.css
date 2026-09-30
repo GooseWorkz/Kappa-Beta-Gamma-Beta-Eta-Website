@@ -19,7 +19,7 @@ nav {
 }
 
 .logo img {
-  width: 40px;
+  width: 50px;
 }
 
 .logo h3 {
@@ -28,6 +28,23 @@ nav {
   text-decoration: none;
   font-size: 28px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-left: 10px;
+  color: #0000ff;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-top: 4px;
+  margin-top: 0;
+}
+
+.nav-title {
+  text-decoration: none;
 }
 
 .nav-links {
@@ -123,5 +140,18 @@ nav {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       /* Minimum: 1.25rem, Preferred: 2vw + 0.75rem, Maximum: 2rem */
       font-size: clamp(1.25rem, 2vw + 0.75rem, 2rem);
+      margin-bottom: 0;
+      padding-bottom: 0;
+     }
+
+     h4 {
+      margin-left: 10px;
+      color: #0000ff;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      /* Minimum: 1.25rem, Preferred: 2vw + 0.75rem, Maximum: 2rem */
+      font-size: clamp(1rem, 1.5vw + 0.50rem, 1rem);
+      padding-top:4px;
+      margin-top: 0;
      }
 }
