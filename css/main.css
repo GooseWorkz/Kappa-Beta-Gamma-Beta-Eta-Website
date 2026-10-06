@@ -1,7 +1,7 @@
 /* Place CSS styles here */
 
 body {
-  background-color: #00008b;
+  background-color: #262663;
 }
 nav {
   position: sticky;
@@ -10,7 +10,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #fff8dc;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -166,7 +166,7 @@ h4 {
 /* Styled Button */
 .dropdown-trigger {
   background-color: #1a1a1a;
-  color: #fff;
+  color: #ffffff;
   padding: 14px 28px;
   font-size: 18px;
   font-weight: 600;
@@ -220,4 +220,19 @@ h4 {
 
 .gallery-item img:hover {
   transform: scale(1.03);
+}
+
+.featured-content {
+  color:#ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
