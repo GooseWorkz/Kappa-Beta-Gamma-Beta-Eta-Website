@@ -475,6 +475,7 @@ align-items: center;
 gap: 24px;
 padding: 12px 16px 38px;
 border: none;
+background-color: #ffffff;
 }
 
 .footer-brand {
@@ -746,7 +747,7 @@ left: 10px;
     border-radius: 15px;
     padding: 20px 26px 24px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #3d8de2;
 }
 
 .form-group {
