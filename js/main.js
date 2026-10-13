@@ -35,3 +35,29 @@ window.onclick = function(event) {
     }
   }
 }
+
+ {const slides = [
+    "images/chapter-photo-1.jpg",
+    "images/chapter-photo-2.jpg",
+    "images/chapter-photo-3.jpg"
+  ];
+
+  let currentslide = 0;
+
+  function showslide(index) {
+    currentslide = (index + slides.length) % slides.length;
+
+    document.getElementById("carousel-image").src = slides[currentslide];
+
+    document.querySelectorAll(".carousel-dots button").forEach((dot, i) => {
+      dot.classList.toggle.apply("active", i === currentslide);
+    });
+  }
+
+  function changeslides(direction) {
+    showslide(currentslide + direction);
+  }
+
+  showslide(0);}
+
+
