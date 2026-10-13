@@ -349,7 +349,7 @@ object-fit: cover;
 }
 
 .carousel-btn {
-transform: translateY(-110%) translateX(10%) relative;
+transform: translateY(-110%) translateX(10%);
 border: none;
 border-radius: 50%;
 padding: 10px 14px;
@@ -743,8 +743,10 @@ left: 10px;
 
 .form-container {
     border: 1.5px solid #000000;
+    border-radius: 15px;
     padding: 20px 26px 24px;
     width: 100%;
+    background-color: #ffffff;
 }
 
 .form-group {
@@ -833,4 +835,23 @@ left: 10px;
 .back-button:hover {
   background: #000000;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
 }
