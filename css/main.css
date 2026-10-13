@@ -148,7 +148,6 @@ h4 {
       color: #0000ff;
       text-decoration: none;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      /* Minimum: 1.25rem, Preferred: 2vw + 0.75rem, Maximum: 2rem */
       font-size: clamp(1.25rem, 2vw + 0.75rem, 2rem);
       margin-bottom: 0;
       padding-bottom: 0;
@@ -159,7 +158,6 @@ h4 {
       color: #0000ff;
       text-decoration: none;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      /* Minimum: 1.25rem, Preferred: 2vw + 0.75rem, Maximum: 2rem */
       font-size: clamp(1rem, 1.5vw + 0.50rem, 1rem);
       padding-top:4px;
       margin-top: 0;
@@ -802,7 +800,7 @@ left: 10px;
 }
 
 
-
+/*thank you page*/
 .thank-you {
   min-height: 70vh;
   display: flex;
