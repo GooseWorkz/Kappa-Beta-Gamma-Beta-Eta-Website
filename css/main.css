@@ -209,7 +209,7 @@ h4 {
   display: block;
 }
 
-/* Responsive Grid layout for pictures */
+/* Responsive Grid layout for the pictures */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -852,5 +852,621 @@ left: 10px;
         width: 100%;
         max-width: 100%;
         margin: 0;
+    }
+}
+
+/* =========================
+   INTRODUCTION / HERO / Events Section
+========================= */
+
+.intro {
+    border: 1px solid #000;
+    margin-top: 3px;
+    min-height: 280px;
+    padding: 32px 8%;
+}
+
+.intro-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.intro h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.intro-description {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   UPCOMING EVENTS
+========================= */
+
+.events-container {
+    margin: 54px 3% 0;
+}
+
+.section-heading {
+    font-size: 36px;
+    margin: 0 0 -2px 6px;
+    line-height: 1.15;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.event-card {
+    border: 1px solid #000;
+    padding: 12px 8px;
+    min-height: 105px;
+}
+
+.event-details {
+    border-left: 4px solid #000;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.event-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.event-details h3 {
+    font-size: 22px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.event-details p:not(.event-date) {
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+
+/* =========================
+   RECENT EVENTS
+========================= */
+
+.recent-events {
+    border: 1px solid #000;
+    margin-top: 8px;
+    padding: 15px 5px 12px;
+}
+
+.recent-events h2 {
+    font-size: 22px;
+    margin: 0 0 4px;
+}
+
+.recent-events ul {
+    list-style: none;
+    padding-left: 12px;
+    margin: 0;
+}
+
+.recent-events li {
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+/* =========================
+   MAIN HISTORY CONTENT
+========================= */
+
+.history-container {
+    margin: 32px 4% 55px;
+}
+
+.founders-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 35px;
+    align-items: stretch;
+}
+
+.history-accent {
+    border-left: 4px solid #000;
+    padding-left: 18px;
+}
+
+.founders-text h2 {
+    font-size: 22px;
+    margin: 0 0 2px;
+}
+
+.founders-text p {
+    font-size: 19px;
+    line-height: 1.32;
+    margin: 0;
+}
+
+
+/* FOUNDERS IMAGE PLACEHOLDER */
+
+.founders-image {
+    border: 1px solid #000;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.founders-image::before,
+.founders-image::after {
+    content: "";
+    position: absolute;
+    width: 145%;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    left: -22.5%;
+}
+
+.founders-image::before {
+    transform: rotate(35deg);
+}
+
+.founders-image::after {
+    transform: rotate(-35deg);
+}
+
+
+/* =========================
+   FOUNDING MEMBERS
+========================= */
+
+.founding-members {
+    margin: 28px 4px 32px;
+}
+
+.founding-members h3 {
+    font-size: 18px;
+    margin: 0 0 4px;
+}
+
+.founding-members p {
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 0;
+}
+
+
+/* =========================
+   TIMELINE HEADING
+========================= */
+
+.timeline-section {
+    margin-top: 32px;
+}
+
+.timeline-heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 12px;
+}
+
+.timeline-heading span {
+    font-size: 18px;
+}
+
+.timeline-heading span:last-child {
+    text-align: right;
+}
+
+.timeline-heading h2 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* =========================
+   HORIZONTAL TIMELINE
+========================= */
+
+.timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding-top: 0;
+}
+
+/* Main horizontal line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #000;
+}
+
+/* Vertical end caps */
+.timeline::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 0;
+    right: 0;
+    height: 170px;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+    pointer-events: none;
+}
+
+.timeline-item {
+    min-width: 0;
+    position: relative;
+    text-align: center;
+    padding: 14px 10px 0;
+}
+
+.timeline-year {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+
+/* Marker hanging from the timeline */
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+    width: 4px;
+    height: 20px;
+    background: #000;
+    margin: 0 auto 10px;
+    transform: rotate(3deg);
+}
+
+.timeline-item p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 170px;
+}
+
+
+/* =========================
+   HISTORY PAGE RESPONSIVENESS
+========================= */
+
+@media (max-width: 800px) {
+    .history-hero {
+        padding: 24px 5%;
+    }
+
+    .founders-section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .founders-image {
+        min-height: 260px;
+    }
+
+    .history-container {
+        margin: 28px 3% 40px;
+    }
+
+    .timeline-heading h2 {
+        font-size: 19px;
+    }
+
+    .timeline-item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .timeline-item p {
+        font-size: 15px;
+    }
+
+    .timeline-year {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .history-hero {
+        padding: 22px 16px;
+    }
+
+    .history-eyebrow {
+        font-size: 15px;
+    }
+
+    .history-hero h1 {
+        font-size: 32px;
+    }
+
+    .history-hero-content > p:last-child {
+        font-size: 17px;
+    }
+
+    .founders-text p,
+    .founding-members p {
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .timeline-heading {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4px;
+    }
+
+    .timeline-heading span,
+    .timeline-heading span:last-child {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 24px;
+    }
+
+    .timeline::before {
+        top: 0;
+        bottom: 0;
+        left: 5px;
+        right: auto;
+        width: 3px;
+        height: auto;
+    }
+
+    .timeline::after {
+        display: none;
+    }
+
+    .timeline-item {
+        text-align: left;
+        padding: 0 0 0 16px;
+    }
+
+    .timeline-year {
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: -23px;
+        top: 4px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0;
+        transform: none;
+    }
+
+    .timeline-item p {
+        max-width: none;
+        font-size: 16px;
+        margin: 0;
+    }
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.merch-container {
+    max-width: 1200px;
+    margin: 16px auto 24px;
+    padding: 0 24px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 18px;
+}
+
+.product-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* PRODUCT IMAGE PLACEHOLDER */
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.product-image::before,
+.product-image::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 142%;
+    background: #000;
+    top: 50%;
+    left: -21%;
+}
+
+.product-image::before {
+    transform: rotate(45deg);
+}
+
+.product-image::after {
+    transform: rotate(-45deg);
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-card h2 {
+    font-size: 22px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.product-sizes {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    margin: 4px 0 10px;
+}
+
+
+/* ORDER BUTTON */
+
+.order-button {
+    display: block;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 7px 3px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: auto;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.order-button:hover,
+.order-button:focus-visible {
+    background: #000;
+    color: #fff;
+}
+
+
+/* =========================
+   HOW ORDERING WORKS
+========================= */
+
+.ordering-info {
+    border: 1px solid #000;
+    margin: 14px 24px 0;
+    padding: 12px 32px;
+}
+
+.ordering-content {
+    border-left: 5px solid #000;
+    padding: 0 0 0 22px;
+}
+
+.ordering-content h2 {
+    font-size: 28px;
+    margin: 0 0 4px;
+}
+
+.ordering-content p {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 750px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .merch-container {
+        padding: 0 16px;
+    }
+
+    .ordering-info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .merch-hero {
+        min-height: auto;
+        padding: 28px 20px;
+    }
+
+    .merch-eyebrow {
+        font-size: 17px;
+    }
+
+    .merch-hero h1 {
+        font-size: 34px;
+    }
+
+    .merch-hero-content > p:last-child {
+        font-size: 17px;
+    }
+
+    .merch-container {
+        padding: 0 8px;
+        margin-top: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 16px;
+        row-gap: 22px;
+    }
+
+    .product-card h2 {
+        font-size: 19px;
+    }
+
+    .product-sizes {
+        font-size: 13px;
+    }
+
+    .order-button {
+        font-size: 14px;
+    }
+
+    .ordering-info {
+        padding: 16px 12px;
+        margin-top: 24px;
     }
 }
